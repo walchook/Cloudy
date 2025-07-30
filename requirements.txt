@@ -9,4 +9,3 @@ tzdata
 djangorestframework
 aiogram
 python-decouple
-rest_framework
