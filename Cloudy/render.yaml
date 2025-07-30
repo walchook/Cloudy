@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: cloudy
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: gunicorn Cloudy.wsgi:application
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: Cloudy.settings
+      - key: SECRET_KEY
+        value: b(&7qlvwjw0t%r_-w8yvbgq!urxhjioesu(@9n2z-a9%!!=8zp
+      - key: postgresql://postgress:HbbUgxa28u4DgQ2YQpPegS69HBwY8znN@dpg-d21hkqffte5s73fk6p50-a/cloudy
+        fromDatabase:
+          name: cloudy1
+          property: connectionString
+
+databases:
+  - name: cloudy1
