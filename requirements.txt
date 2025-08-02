@@ -10,3 +10,4 @@ djangorestframework
 aiogram
 python-decouple
 dj-database-url
+rest_framework_simplejwt
