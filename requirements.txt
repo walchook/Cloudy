@@ -13,3 +13,4 @@ dj-database-url
 djangorestframework
 djangorestframework-simplejwt
 drf-yasg==1.21.7
+django-simple-history==3.3.0
