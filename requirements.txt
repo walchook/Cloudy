@@ -12,5 +12,4 @@ python-decouple
 dj-database-url
 djangorestframework
 djangorestframework-simplejwt
-drf-yasg
-
+drf-yasg==1.21.7
