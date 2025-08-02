@@ -12,3 +12,5 @@ python-decouple
 dj-database-url
 djangorestframework
 djangorestframework-simplejwt
+drf-yasg
+
